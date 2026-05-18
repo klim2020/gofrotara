@@ -28,13 +28,14 @@ jobs:
         run: npm run build
         working-directory: html
 
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
+
       - name: Deploy via rsync
-        uses: burntsushi/rsync-deployments@master
-        env:
-          DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        with:
-          switches: -avz --delete
-          path: html/dist/
-          remote_path: /home/www/okna/
-          remote_host: ${{ secrets.SSH_HOST }}
-          remote_user: ${{ secrets.SSH_USER }}
+        run: |
+          rsync -avz --delete html/dist/ \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/www/okna/

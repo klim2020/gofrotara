@@ -178,5 +178,5 @@ contactForm?.addEventListener('submit', (e) => {
 
 document.addEventListener('DOMContentLoaded',()=>{
   // TODO: remove
-  console.log('test1');
+  console.log('test21');
 })
