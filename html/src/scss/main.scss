@@ -1,0 +1,79 @@
+// ============================================================
+// GOFROTARA MARKET — Main SCSS Entry
+// Selective Bootstrap imports + custom section partials
+// ============================================================
+
+// 1. Bootstrap core (required first)
+@import "bootstrap/scss/functions";
+
+// 2. Our variable overrides (before bootstrap variables!)
+@import "variables";
+
+// 3. Bootstrap default variables + maps + mixins
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// 4. Bootstrap layout & base
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/transitions";
+
+// 5. Bootstrap components (only what we use)
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/forms/labels";
+@import "bootstrap/scss/forms/form-control";
+@import "bootstrap/scss/forms/form-text";
+@import "bootstrap/scss/forms/form-select";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
+
+// 6. Global overflow guard — both html AND body needed for all mobile browsers
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+// Skip-to-content link for keyboard users
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  background: $primary;
+  color: $white;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 4px 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+
+  &:focus {
+    top: 0;
+  }
+}
+
+// AOS fallback: keep elements visible until AOS initialises (adds .aos-init to <body>)
+body:not(.aos-init) [data-aos] {
+  opacity: 1;
+  transform: none;
+}
+
+// 7. Custom section partials
+@import "header";
+@import "hero";
+@import "catalog";
+@import "benefits";
+@import "how-it-works";
+@import "stats";
+@import "contacts";
+@import "footer";

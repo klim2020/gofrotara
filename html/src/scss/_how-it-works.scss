@@ -1,0 +1,149 @@
+// ============================================================
+// BLOCK: HOW IT WORKS (СХЕМА РОБОТИ)
+// ============================================================
+
+.how-it-works-section {
+  padding: 5rem 0;
+  background: $white;
+  overflow: hidden;
+
+  @include media-breakpoint-down(md) {
+    padding: 3rem 0;
+  }
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+
+  @include media-breakpoint-down(md) {
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(3, 1fr);
+
+    // Connecting line between steps
+    &::before {
+      content: '';
+      position: absolute;
+      top: 36px; // center of step number
+      left: calc(16.66% + 24px);
+      right: calc(16.66% + 24px);
+      height: 2px;
+      background: linear-gradient(90deg, $primary-border, $primary, $primary-border);
+      z-index: 0;
+    }
+  }
+}
+
+.step-card {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+
+  @include media-breakpoint-down(md) {
+    display: flex;
+    gap: 1.25rem;
+    text-align: left;
+  }
+}
+
+.step-number {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: $primary;
+  color: $white;
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 8px $primary-subtle;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    margin: 0;
+    width: 56px;
+    height: 56px;
+    font-size: 1.3rem;
+    box-shadow: 0 0 0 5px $primary-subtle;
+  }
+}
+
+.step-body {
+  @include media-breakpoint-down(md) {
+    flex: 1;
+  }
+}
+
+.step-icon {
+  width: 52px;
+  height: 52px;
+  background: $graphite-100;
+  border-radius: $border-radius;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+
+  i {
+    font-size: 1.4rem;
+    color: $graphite-600;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $graphite-900;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.step-desc {
+  font-size: 0.88rem;
+  color: $graphite-500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+// CTA below steps
+.how-it-works-cta {
+  text-align: center;
+  margin-top: 3.5rem;
+  padding: 2.5rem;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 2rem;
+    padding: 2rem 1.25rem;
+
+    .cta-title { font-size: 1.2rem; }
+  }
+  background: linear-gradient(135deg, $graphite-900 0%, $graphite-800 100%);
+  border-radius: $border-radius-xl;
+
+  .cta-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 0.5rem;
+  }
+
+  .cta-sub {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+}

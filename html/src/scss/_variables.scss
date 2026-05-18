@@ -1,0 +1,81 @@
+// ============================================================
+// GOFROTARA MARKET — Brand Variables
+// Colors: orange (#BF5A14) + graphite (#2F3E4E)
+// Blue colors from template replaced with orange equivalents
+// ============================================================
+
+// --- Orange palette (replaces blue from template) ---
+$primary-dark:        #9E4A0E;   // Hover / pressed state
+$primary-light:       #D4712E;   // Lighter orange
+$primary-subtle:      #F5DDD0;   // Very light tint for backgrounds
+$primary-border:      #E8A882;   // Border color for orange-tinted elements
+
+// --- Graphite palette (secondary brand color) ---
+$graphite-900:        #1C2533;   // Darkest — hero backgrounds, deep headings
+$graphite-800:        #253040;   // Dark sections
+$graphite-700:        #2F3E4E;   // Body text, card backgrounds
+$graphite-600:        #405062;   // Secondary text
+$graphite-500:        #546472;   // Muted text, borders
+$graphite-400:        #8FA0AC;   // Placeholder, disabled
+$graphite-300:        #C0CDD6;   // Light borders
+$graphite-200:        #E4EBF0;   // Light borders, dividers
+$graphite-100:        #F0F4F7;   // Light section backgrounds
+$graphite-50:         #F8FAFB;   // Lightest bg
+
+// --- Semantic ---
+$white:               #FFFFFF;
+$light-bg:            $graphite-100;
+$border-color-base:   $graphite-300;
+
+// ============================================================
+// Bootstrap Variable Overrides (must come before bootstrap import)
+// ============================================================
+$font-family-sans-serif: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+$body-color:          $graphite-700;
+$body-bg:             $white;
+
+$headings-color:      $graphite-900;
+$headings-font-weight: 700;
+$headings-line-height: 1.2;
+
+$lead-font-size:      1.125rem;
+$lead-font-weight:    400;
+
+// Override Bootstrap's $primary so btn-primary, links, etc. use our orange
+$primary:             #BF5A14;
+$secondary:           $graphite-700;
+
+$link-color:          $primary;
+$link-hover-color:    $primary-dark;
+$link-decoration:     none;
+
+$btn-border-radius:   4px;
+$btn-border-radius-lg: 6px;
+$btn-padding-x:       1.5rem;
+$btn-padding-y:       0.65rem;
+$btn-font-weight:     600;
+$btn-font-size:       0.95rem;
+
+$input-border-color:  $graphite-300;
+$input-focus-border-color: $primary;
+$input-focus-box-shadow: 0 0 0 3px rgba(191, 90, 20, 0.15);
+$input-border-radius: 4px;
+$input-padding-y:     0.65rem;
+$input-padding-x:     1rem;
+
+$navbar-light-color:          $graphite-600;
+$navbar-light-hover-color:    $primary;
+$navbar-light-active-color:   $primary;
+$navbar-toggler-border-radius: 4px;
+$navbar-padding-y:            1rem;
+
+$border-radius:       6px;
+$border-radius-lg:    10px;
+$border-radius-xl:    14px;
+
+$box-shadow-sm:       0 1px 4px rgba(28, 37, 51, 0.08);
+$box-shadow:          0 4px 16px rgba(28, 37, 51, 0.12);
+$box-shadow-lg:       0 8px 32px rgba(28, 37, 51, 0.15);
+
+$transition-base:     all 0.25s ease;

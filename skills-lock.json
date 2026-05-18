@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "web-coder": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/web-coder/SKILL.md",
+      "computedHash": "f26b2845e3b1ccd59ff2158c45fe2872038e27237757e063d3811a1244757074"
+    }
+  }
+}

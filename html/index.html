@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gofrotara Market — продаж гофротари в Україні. Картонні коробки, гофрокартон, пакувальні матеріали оптом та в роздріб." />
+  <title>Gofrotara Market — Надійна упаковка для бізнесу</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Main CSS (processed by Vite) -->
+  <link rel="stylesheet" href="/src/scss/main.scss" />
+</head>
+<body>
+<a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+
+<!-- ==========================================================
+     BLOCK: HEADER
+     Disable: comment out the entire <header> block below
+     ========================================================== -->
+<header id="header" class="site-header" role="banner">
+  <nav class="navbar navbar-expand-lg" aria-label="Головна навігація">
+    <div class="container">
+
+      <!-- Logo -->
+      <a href="#" class="header-logo navbar-brand" aria-label="Gofrotara Market — на головну">
+        <img src="/src/logo.png" class="logo-icon" alt="Gofrotara Market" />
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler collapsed" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarMain"
+        aria-controls="navbarMain" aria-expanded="false" aria-label="Відкрити меню">
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+      </button>
+
+      <!-- Nav links -->
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav site-nav ms-auto me-3" role="list">
+          <li class="nav-item"><a class="nav-link active" href="#catalog" aria-current="true">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="#benefits">Переваги</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how-it-works">Оплата і доставка</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacts">Контакти</a></li>
+        </ul>
+        <a href="#contacts" class="btn btn-header-cta">
+          <i class="bi bi-telephone-fill me-1"></i>
+          Замовити дзвінок
+        </a>
+      </div>
+
+    </div>
+  </nav>
+</header>
+<!-- /BLOCK: HEADER -->
+
+<main id="main-content">
+
+<!-- ==========================================================
+     BLOCK: HERO
+     Disable: comment out the entire <section id="hero"> block
+     ========================================================== -->
+<section id="hero" class="hero-section" aria-label="Головний банер">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left: text content -->
+      <div class="col-lg-6 col-xl-5 hero-content">
+        <div class="hero-badge" data-aos="fade-down" data-aos-duration="600">
+          <i class="bi bi-box-seam-fill"></i>
+          Виробник та постачальник гофротари
+        </div>
+
+        <h1 class="hero-title" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+          Продаж гофротари<br>
+          в Україні. <span class="text-accent">Надійна</span><br>
+          упаковка для бізнесу.
+        </h1>
+
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+          Від транспортних коробок до брендованих самозбірних рішень. Власне виробництво, широкий асортимент, швидка доставка по всій Україні.
+        </p>
+
+        <div class="hero-actions" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+          <a href="#contacts" class="btn-hero-primary">
+            <i class="bi bi-calculator me-2"></i>
+            Розрахувати вартість
+          </a>
+          <a href="#catalog" class="btn-hero-secondary">
+            Отримати прайс-лист
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: illustration -->
+      <div class="col-lg-6 col-xl-7 hero-visual" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+        <svg class="hero-svg" viewBox="0 0 480 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Background glow -->
+          <defs>
+            <radialGradient id="heroGlow" cx="50%" cy="55%" r="45%">
+              <stop offset="0%" stop-color="#BF5A14" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#BF5A14" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="240" cy="220" rx="210" ry="170" fill="url(#heroGlow)"/>
+
+          <!-- BIG BOX (bottom) -->
+          <!-- Top face -->
+          <path d="M60 230 L240 140 L420 230 L240 320 Z" fill="#2F4255"/>
+          <!-- Front face -->
+          <path d="M60 230 L60 320 L240 410 L240 320 Z" fill="#243345"/>
+          <!-- Right face -->
+          <path d="M420 230 L420 320 L240 410 L240 320 Z" fill="#1A2835"/>
+          <!-- Orange tape — top -->
+          <path d="M80 222 L240 135 L255 142 L95 229 Z" fill="#BF5A14" opacity="0.85"/>
+          <!-- Orange tape — front -->
+          <path d="M60 268 L240 358 L240 370 L60 280 Z" fill="#BF5A14" opacity="0.85"/>
+          <!-- Orange tape — right -->
+          <path d="M420 268 L240 358 L240 370 L420 280 Z" fill="#9E4A0E" opacity="0.85"/>
+          <!-- Seam lines on top -->
+          <line x1="240" y1="140" x2="240" y2="230" stroke="#3E5570" stroke-width="1" opacity="0.6"/>
+          <line x1="60" y1="185" x2="420" y2="185" stroke="#3E5570" stroke-width="0.8" opacity="0.5"/>
+
+          <!-- MEDIUM BOX (middle) -->
+          <path d="M105 175 L255 100 L405 175 L255 250 Z" fill="#354A60"/>
+          <path d="M105 175 L105 250 L255 325 L255 250 Z" fill="#283C50"/>
+          <path d="M405 175 L405 250 L255 325 L255 250 Z" fill="#1E3040"/>
+          <!-- Seam cross -->
+          <line x1="255" y1="100" x2="255" y2="175" stroke="#BF5A14" stroke-width="2.5" opacity="0.75"/>
+          <line x1="105" y1="137" x2="405" y2="137" stroke="#4A6070" stroke-width="0.8"/>
+
+          <!-- SMALL BOX (top, slightly open) -->
+          <path d="M155 120 L255 70 L355 120 L255 170 Z" fill="#354A60"/>
+          <path d="M155 120 L155 180 L255 230 L255 170 Z" fill="#283C50"/>
+          <path d="M355 120 L355 180 L255 230 L255 170 Z" fill="#1E3040"/>
+          <!-- Open flap (orange) -->
+          <path d="M155 120 L205 95 L255 70 L255 55 L205 80 L155 105 Z" fill="#BF5A14" opacity="0.9"/>
+          <!-- Flap shadow -->
+          <path d="M155 120 L205 95 L255 70 L255 55 L205 80 L155 105 Z" fill="url(#flapGrad)" opacity="0.4"/>
+
+          <defs>
+            <linearGradient id="flapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#000" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Floating product icons -->
+          <circle cx="60" cy="115" r="22" fill="rgba(191,90,20,0.12)" stroke="rgba(191,90,20,0.25)" stroke-width="1"/>
+          <text x="60" y="121" text-anchor="middle" font-size="16" fill="#BF5A14">📦</text>
+
+          <circle cx="420" cy="160" r="18" fill="rgba(191,90,20,0.1)" stroke="rgba(191,90,20,0.2)" stroke-width="1"/>
+          <text x="420" y="165" text-anchor="middle" font-size="12" fill="#BF5A14">📋</text>
+
+          <!-- Decorative dots -->
+          <circle cx="42" cy="290" r="8" fill="#BF5A14" opacity="0.25"/>
+          <circle cx="42" cy="290" r="4" fill="#BF5A14" opacity="0.45"/>
+          <circle cx="440" cy="280" r="11" fill="#BF5A14" opacity="0.18"/>
+          <circle cx="440" cy="280" r="5" fill="#BF5A14" opacity="0.35"/>
+          <circle cx="390" cy="90" r="5" fill="#BF5A14" opacity="0.3"/>
+          <circle cx="100" cy="65" r="4" fill="#BF5A14" opacity="0.25"/>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /BLOCK: HERO -->
+
+
+<!-- ==========================================================
+     BLOCK: STATS (лічильники)
+     Disable: comment out the entire <section id="stats"> block
+     ========================================================== -->
+<section id="stats" class="stats-section" aria-label="Статистика компанії">
+  <div class="container">
+    <div class="stats-grid">
+
+      <div class="stat-item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0">
+        <div class="stat-number">500<span>+</span></div>
+        <p class="stat-label">Постійних клієнтів</p>
+      </div>
+
+      <div class="stat-item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+        <div class="stat-number">50<span>+</span></div>
+        <p class="stat-label">Видів продукції</p>
+      </div>
+
+      <div class="stat-item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+        <div class="stat-number">98<span>%</span></div>
+        <p class="stat-label">Задоволених клієнтів</p>
+      </div>
+
+      <div class="stat-item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+        <div class="stat-number">10<span>+ р.</span></div>
+        <p class="stat-label">Досвіду на ринку</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /BLOCK: STATS -->
+
+
+<!-- ==========================================================
+     BLOCK: CATALOG (каталог продукції)
+     Disable: comment out the entire <section id="catalog"> block
+     ========================================================== -->
+<section id="catalog" class="catalog-section" aria-label="Каталог продукції">
+  <div class="container">
+
+    <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="600">
+      <span class="section-label">Асортимент</span>
+      <h2 class="section-title">Каталог продукції</h2>
+      <p class="section-subtitle mx-auto">
+        Широкий вибір упаковки з гофрокартону для будь-яких потреб вашого бізнесу. Ціни від виробника, система знижок.
+      </p>
+    </div>
+
+    <!-- Swiper catalog slider (mobile) / grid (desktop) -->
+    <div class="swiper catalog-swiper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+      <div class="swiper-wrapper">
+
+        <!-- Product 1: Картонні коробки -->
+        <div class="swiper-slide">
+          <article class="product-card h-100">
+            <div class="product-icon-wrap">
+              <svg class="product-icon" width="80" height="70" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M10 35 L40 20 L70 35 L40 50 Z" fill="currentColor" opacity="0.12"/>
+                <path d="M10 35 L10 55 L40 70 L40 50 Z" fill="currentColor" opacity="0.2"/>
+                <path d="M70 35 L70 55 L40 70 L40 50 Z" fill="currentColor" opacity="0.15"/>
+                <path d="M10 35 L40 20 L70 35 L40 50 Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <path d="M10 35 L10 55 L40 70 L40 50 Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <path d="M70 35 L70 55 L40 70 L40 50 Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <!-- Flaps open -->
+                <path d="M10 35 L25 28 L40 35" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <path d="M40 35 L55 28 L70 35" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <!-- Tape stripe -->
+                <path d="M10 35 L40 20 L42 21 L12 36 Z" fill="currentColor" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <p class="product-price">Ціни від ... грн, система знижок</p>
+              <h3 class="product-name">Картонні коробки</h3>
+              <p class="product-desc">Транспортні коробки різних розмірів для безпечного пакування та доставки товарів.</p>
+              <a href="#contacts" class="btn-order">
+                <i class="bi bi-cart-plus"></i>
+                Замовити
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 2: Самозбірні коробки -->
+        <div class="swiper-slide">
+          <article class="product-card h-100">
+            <div class="product-icon-wrap">
+              <svg class="product-icon" width="80" height="70" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="15" y="25" width="50" height="35" rx="2" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+                <!-- Fold lines -->
+                <line x1="40" y1="10" x2="40" y2="25" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2"/>
+                <line x1="15" y1="17" x2="65" y2="17" stroke="currentColor" stroke-width="1"/>
+                <!-- Top flap left -->
+                <path d="M15 25 L15 10 L40 10 L40 25" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.15"/>
+                <!-- Top flap right -->
+                <path d="M40 25 L40 10 L65 10 L65 25" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.1"/>
+                <!-- Locking tab -->
+                <path d="M32 10 L40 4 L48 10" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.3"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <p class="product-price">Ціни від ... грн, система знижок</p>
+              <h3 class="product-name">Самозбірні коробки</h3>
+              <p class="product-desc">Зручні для збирання без клею та степлера. Ідеальні для електронної комерції та роздрібу.</p>
+              <a href="#contacts" class="btn-order">
+                <i class="bi bi-cart-plus"></i>
+                Замовити
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 3: Гофролотки -->
+        <div class="swiper-slide">
+          <article class="product-card h-100">
+            <div class="product-icon-wrap">
+              <svg class="product-icon" width="80" height="70" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Tray - low sides -->
+                <path d="M8 45 L8 30 L40 22 L72 30 L72 45 L40 53 Z" fill="currentColor" fill-opacity="0.1"/>
+                <path d="M8 45 L8 30 L40 22 L72 30 L72 45 L40 53 Z" stroke="currentColor" stroke-width="1.5"/>
+                <!-- Bottom face -->
+                <path d="M8 30 L40 22 L72 30 L40 38 Z" fill="currentColor" fill-opacity="0.15"/>
+                <path d="M8 30 L40 22 L72 30 L40 38 Z" stroke="currentColor" stroke-width="1.5"/>
+                <!-- Corrugated texture lines -->
+                <line x1="20" y1="28" x2="20" y2="43" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+                <line x1="32" y1="25" x2="32" y2="40" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+                <line x1="48" y1="25" x2="48" y2="40" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+                <line x1="60" y1="28" x2="60" y2="43" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <p class="product-price">Ціни від ... грн, система знижок</p>
+              <h3 class="product-name">Гофролотки</h3>
+              <p class="product-desc">Відкриті лотки для фруктів, овочів, пляшок та промислових деталей. Різні розміри та конфігурації.</p>
+              <a href="#contacts" class="btn-order">
+                <i class="bi bi-cart-plus"></i>
+                Замовити
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 4: Пакувальний папір -->
+        <div class="swiper-slide">
+          <article class="product-card h-100">
+            <div class="product-icon-wrap">
+              <svg class="product-icon" width="80" height="70" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Paper roll -->
+                <ellipse cx="40" cy="50" rx="22" ry="8" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="18" y="20" width="44" height="30" rx="0" fill="currentColor" fill-opacity="0.08"/>
+                <line x1="18" y1="20" x2="18" y2="50" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="62" y1="20" x2="62" y2="50" stroke="currentColor" stroke-width="1.5"/>
+                <ellipse cx="40" cy="20" rx="22" ry="8" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="1.5"/>
+                <!-- Inner roll -->
+                <ellipse cx="40" cy="20" rx="10" ry="4" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1"/>
+                <!-- Paper lines -->
+                <line x1="20" y1="30" x2="60" y2="30" stroke="currentColor" stroke-width="0.7" opacity="0.4"/>
+                <line x1="20" y1="38" x2="60" y2="38" stroke="currentColor" stroke-width="0.7" opacity="0.4"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <p class="product-price">Ціни від ... грн, система знижок</p>
+              <h3 class="product-name">Пакувальний папір</h3>
+              <p class="product-desc">Крафт-папір у рулонах та аркушах. Для обгортання, прокладки та захисту товарів під час транспортування.</p>
+              <a href="#contacts" class="btn-order">
+                <i class="bi bi-cart-plus"></i>
+                Замовити
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 5: Двошаровий гофрокартон -->
+        <div class="swiper-slide">
+          <article class="product-card h-100">
+            <div class="product-icon-wrap">
+              <svg class="product-icon" width="80" height="70" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Stacked sheets -->
+                <path d="M10 50 L70 50 L70 56 L10 56 Z" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10 42 L70 42 L70 48 L10 48 Z" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.5"/>
+                <!-- Main sheet with corrugation cross-section -->
+                <rect x="10" y="20" width="60" height="20" rx="1" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+                <!-- Corrugated interior waves -->
+                <path d="M14 28 Q18 24 22 28 Q26 32 30 28 Q34 24 38 28 Q42 32 46 28 Q50 24 54 28 Q58 32 62 28 Q66 24 66 28" stroke="currentColor" stroke-width="1.3" fill="none" opacity="0.7"/>
+                <path d="M14 32 Q18 28 22 32 Q26 36 30 32 Q34 28 38 32 Q42 36 46 32 Q50 28 54 32 Q58 36 62 32 Q66 28 66 32" stroke="currentColor" stroke-width="1.3" fill="none" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <p class="product-price">Ціни від ... грн, система знижок</p>
+              <h3 class="product-name">Двошаровий гофрокартон</h3>
+              <p class="product-desc">Аркуші та рулони двошарового гофрокартону. Ідеально для прокладки, амортизації та виготовлення упаковки.</p>
+              <a href="#contacts" class="btn-order">
+                <i class="bi bi-cart-plus"></i>
+                Замовити
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 6: Листовий картон -->
+        <div class="swiper-slide">
+          <article class="product-card h-100">
+            <div class="product-icon-wrap">
+              <svg class="product-icon" width="80" height="70" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Stack of flat sheets with perspective -->
+                <path d="M12 50 L68 50 L68 56 L12 56 Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 43 L68 43 L68 49 L12 49 Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 36 L68 36 L68 42 L12 42 Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="1.5"/>
+                <!-- Top sheet slightly angled -->
+                <path d="M10 22 L70 22 L72 35 L8 35 Z" fill="currentColor" fill-opacity="0.12"/>
+                <path d="M10 22 L70 22 L72 35 L8 35 Z" stroke="currentColor" stroke-width="1.5"/>
+                <!-- Score lines on top sheet -->
+                <line x1="14" y1="22" x2="14" y2="35" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+                <line x1="40" y1="22" x2="40" y2="35" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+                <line x1="66" y1="22" x2="68" y2="35" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <p class="product-price">Ціни від ... грн, система знижок</p>
+              <h3 class="product-name">Листовий картон</h3>
+              <p class="product-desc">Плоскі аркуші різних марок і товщини. Використовується для виготовлення коробок під замовлення.</p>
+              <a href="#contacts" class="btn-order">
+                <i class="bi bi-cart-plus"></i>
+                Замовити
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 7: Мікрогофрокартон -->
+        <div class="swiper-slide">
+          <article class="product-card h-100">
+            <div class="product-icon-wrap">
+              <svg class="product-icon" width="80" height="70" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Mini box with fine corrugation -->
+                <rect x="18" y="22" width="44" height="32" rx="2" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M18 22 L40 14 L62 22" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <path d="M40 14 L40 22" stroke="currentColor" stroke-width="1.5"/>
+                <!-- Fine wave pattern on side -->
+                <path d="M20 30 Q22 28 24 30 Q26 32 28 30 Q30 28 32 30 Q34 32 36 30 Q38 28 40 30 Q42 32 44 30 Q46 28 48 30 Q50 32 52 30 Q54 28 56 30 Q58 32 60 30" stroke="currentColor" stroke-width="1" fill="none" opacity="0.6"/>
+                <path d="M20 35 Q22 33 24 35 Q26 37 28 35 Q30 33 32 35 Q34 37 36 35 Q38 33 40 35 Q42 37 44 35 Q46 33 48 35 Q50 37 52 35 Q54 33 56 35 Q58 37 60 35" stroke="currentColor" stroke-width="1" fill="none" opacity="0.6"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <p class="product-price">Ціни від ... грн, система знижок</p>
+              <h3 class="product-name">Мікрогофрокартон</h3>
+              <p class="product-desc">Тонкий гофрокартон з дрібним профілем для упаковки дрібних та крихких виробів, косметики, харчових продуктів.</p>
+              <a href="#contacts" class="btn-order">
+                <i class="bi bi-cart-plus"></i>
+                Замовити
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 8: Брендована упаковка -->
+        <div class="swiper-slide">
+          <article class="product-card h-100">
+            <div class="product-icon-wrap">
+              <svg class="product-icon" width="80" height="70" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Branded box with logo print -->
+                <path d="M15 38 L40 25 L65 38 L40 51 Z" fill="currentColor" fill-opacity="0.12"/>
+                <path d="M15 38 L15 55 L40 68 L40 51 Z" fill="currentColor" fill-opacity="0.18"/>
+                <path d="M65 38 L65 55 L40 68 L40 51 Z" fill="currentColor" fill-opacity="0.12"/>
+                <path d="M15 38 L40 25 L65 38 L40 51 Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M15 38 L15 55 L40 68 L40 51 Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M65 38 L65 55 L40 68 L40 51 Z" stroke="currentColor" stroke-width="1.5"/>
+                <!-- Print logo area on front face -->
+                <rect x="22" y="43" width="13" height="9" rx="1" fill="currentColor" fill-opacity="0.4"/>
+                <line x1="22" y1="47" x2="35" y2="47" stroke="currentColor" stroke-width="0.8"/>
+                <!-- Star/brand mark -->
+                <text x="40" y="22" text-anchor="middle" font-size="8" fill="currentColor" opacity="0.6">★</text>
+              </svg>
+            </div>
+            <div class="product-body">
+              <p class="product-price">Ціни від ... грн, система знижок</p>
+              <h3 class="product-name">Брендована упаковка</h3>
+              <p class="product-desc">Коробки з нанесенням логотипу та фірмового стилю. Мінімальне замовлення від 300 штук.</p>
+              <a href="#contacts" class="btn-order">
+                <i class="bi bi-cart-plus"></i>
+                Замовити
+              </a>
+            </div>
+          </article>
+        </div>
+
+      </div><!-- /swiper-wrapper -->
+
+      <div class="swiper-pagination"></div>
+    </div><!-- /swiper -->
+
+    <!-- Mobile nav buttons -->
+    <div class="catalog-swiper-nav">
+      <button class="swiper-btn catalog-prev" aria-label="Попередній">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <button class="swiper-btn catalog-next" aria-label="Наступний">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="#contacts" class="btn btn-outline-primary px-4">
+        Замовити весь асортимент
+        <i class="bi bi-arrow-right ms-2"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- /BLOCK: CATALOG -->
+
+
+<!-- ==========================================================
+     BLOCK: BENEFITS (переваги роботи)
+     Disable: comment out the entire <section id="benefits"> block
+     ========================================================== -->
+<section id="benefits" class="benefits-section" aria-label="Переваги роботи">
+  <div class="container">
+
+    <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="600">
+      <span class="section-label">Чому ми</span>
+      <h2 class="section-title">Переваги роботи</h2>
+      <p class="section-subtitle mx-auto">
+        Власне виробництво та прямі поставки дозволяють нам пропонувати найкращі умови для вашого бізнесу.
+      </p>
+    </div>
+
+    <div class="benefits-grid">
+
+      <div class="benefit-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+        <div class="benefit-icon-wrap">
+          <i class="bi bi-truck"></i>
+        </div>
+        <h3 class="benefit-title">Швидка доставка</h3>
+        <p class="benefit-desc">Доставка по всій Україні. Термін 1–3 дні залежно від регіону.</p>
+      </div>
+
+      <div class="benefit-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="80">
+        <div class="benefit-icon-wrap">
+          <i class="bi bi-arrows-fullscreen"></i>
+        </div>
+        <h3 class="benefit-title">Індивідуальні розміри</h3>
+        <p class="benefit-desc">Виготовлення нестандартних розмірів і конфігурацій під ваше технічне завдання.</p>
+      </div>
+
+      <div class="benefit-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="160">
+        <div class="benefit-icon-wrap">
+          <i class="bi bi-printer"></i>
+        </div>
+        <h3 class="benefit-title">Друк логотипа</h3>
+        <p class="benefit-desc">Нанесення логотипу, тексту та зображень флексодруком до 4 кольорів.</p>
+      </div>
+
+      <div class="benefit-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="240">
+        <div class="benefit-icon-wrap">
+          <i class="bi bi-cart-check"></i>
+        </div>
+        <h3 class="benefit-title">Мінімальне замовлення від 300 шт.</h3>
+        <p class="benefit-desc">Доступні умови для малого та середнього бізнесу. Система накопичувальних знижок.</p>
+      </div>
+
+      <div class="benefit-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="320">
+        <div class="benefit-icon-wrap">
+          <i class="bi bi-shield-check"></i>
+        </div>
+        <h3 class="benefit-title">Відповідність стандартам</h3>
+        <p class="benefit-desc">Продукція відповідає ДСТУ та міжнародним стандартам якості. Власний ВТК.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- /BLOCK: BENEFITS -->
+
+
+<!-- ==========================================================
+     BLOCK: HOW IT WORKS (схема роботи)
+     Disable: comment out the entire <section id="how-it-works"> block
+     ========================================================== -->
+<section id="how-it-works" class="how-it-works-section" aria-label="Схема роботи">
+  <div class="container">
+
+    <div class="text-center" data-aos="fade-up" data-aos-duration="600">
+      <span class="section-label">Як ми працюємо</span>
+      <h2 class="section-title">Схема роботи</h2>
+      <p class="section-subtitle mx-auto">
+        Проста і прозора процедура замовлення. Від першого контакту до отримання готової партії.
+      </p>
+    </div>
+
+    <div class="steps-grid">
+
+      <div class="step-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="0">
+        <div class="step-number">1</div>
+        <div class="step-body">
+          <div class="step-icon">
+            <i class="bi bi-telephone-outbound"></i>
+          </div>
+          <h3 class="step-title">Контакт та консультація</h3>
+          <p class="step-desc">Залишіть заявку або зателефонуйте нам. Менеджер відповість протягом 15 хвилин і проконсультує щодо вибору упаковки.</p>
+        </div>
+      </div>
+
+      <div class="step-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+        <div class="step-number">2</div>
+        <div class="step-body">
+          <div class="step-icon">
+            <i class="bi bi-pencil-square"></i>
+          </div>
+          <h3 class="step-title">Погодження та оплата</h3>
+          <p class="step-desc">Обговорюємо технічні вимоги, розміри, тираж і терміни. Виставляємо рахунок та узгоджуємо макет логотипу (за потреби).</p>
+        </div>
+      </div>
+
+      <div class="step-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+        <div class="step-number">3</div>
+        <div class="step-body">
+          <div class="step-icon">
+            <i class="bi bi-box-arrow-right"></i>
+          </div>
+          <h3 class="step-title">Виробництво та доставка</h3>
+          <p class="step-desc">Виготовляємо партію у строк. Доставляємо транспортними компаніями або власним транспортом по Україні.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA banner at bottom of section -->
+    <div class="how-it-works-cta" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+      <p class="cta-title">Готові розпочати співпрацю?</p>
+      <p class="cta-sub">Залиште заявку — розрахуємо вартість безкоштовно</p>
+      <a href="#contacts" class="btn-hero-primary">
+        <i class="bi bi-send me-2"></i>
+        Отримати розрахунок
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- /BLOCK: HOW IT WORKS -->
+
+
+<!-- ==========================================================
+     BLOCK: CONTACTS (контакти та форма зв'язку)
+     Disable: comment out the entire <section id="contacts"> block
+     ========================================================== -->
+<section id="contacts" class="contacts-section" aria-label="Контакти">
+  <div class="container">
+
+    <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="600">
+      <span class="section-label">Зв'язок</span>
+      <h2 class="section-title">Контакти</h2>
+      <p class="section-subtitle mx-auto">
+        Зв'яжіться з нами зручним способом. Відповідаємо швидко.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Left: map + contact info -->
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="700">
+
+        <!-- Map embed (replace src with actual Google Maps embed URL) -->
+        <div class="map-wrap mb-4">
+          <div class="map-placeholder text-center">
+            <i class="bi bi-geo-alt d-block mb-2"></i>
+            Карта (вставте iframe Google Maps)
+          </div>
+          <!-- Uncomment and set your Google Maps embed URL:
+          <iframe
+            src="YOUR_GOOGLE_MAPS_EMBED_URL"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Розташування Gofrotara Market"
+          ></iframe>
+          -->
+        </div>
+
+        <div class="contact-info-block">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="contact-info-text">
+              <p class="info-label">Адреса офісу</p>
+              <p class="info-value">вул. Полігова, 13, м. Харків</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-clock-fill"></i></div>
+            <div class="contact-info-text">
+              <p class="info-label">Графік роботи</p>
+              <p class="info-value">Пн–Пт: 09:00–19:00<br>Сб: 09:00–17:00</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div class="contact-info-text">
+              <p class="info-label">Телефон</p>
+              <p class="info-value">
+                <a href="tel:+380991234567">+38 (099) 123-45-67</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div class="contact-info-text">
+              <p class="info-label">Email</p>
+              <p class="info-value">
+                <a href="mailto:info@gofromarket.ua">info@gofromarket.ua</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: contact form -->
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="700">
+        <div class="contact-form-card">
+          <h3 class="form-title">Відкрита форма зв'язку</h3>
+
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="contactName" class="form-label">Ім'я <span class="text-danger">*</span></label>
+              <input type="text" id="contactName" name="name" class="form-control" placeholder="Ваше ім'я" autocomplete="name" required />
+            </div>
+
+            <div class="mb-3">
+              <label for="contactPhone" class="form-label">Телефон <span class="text-danger">*</span></label>
+              <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="+38 (0__) ___-__-__" autocomplete="tel" required />
+            </div>
+
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label">Повідомлення</label>
+              <textarea id="contactMessage" name="message" class="form-control" rows="4" placeholder="Опишіть ваш запит або залиште питання..."></textarea>
+            </div>
+
+            <div id="formError" class="form-error-msg" role="alert" hidden></div>
+
+            <button type="submit" class="btn-submit">
+              <i class="bi bi-send-fill me-2"></i>
+              Відправити
+            </button>
+
+            <p class="form-text form-privacy text-center mt-2">
+              Натискаючи кнопку, ви погоджуєтесь з <a href="#">Політикою конфіденційності</a>
+            </p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /BLOCK: CONTACTS -->
+
+</main>
+
+<!-- ==========================================================
+     BLOCK: FOOTER
+     Disable: comment out the entire <footer id="footer"> block
+     ========================================================== -->
+<footer id="footer" class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- About -->
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-logo-wrap">
+          <div class="logo-main">GOFROTARA</div>
+          <div class="logo-sub">MARKET</div>
+        </div>
+        <p class="footer-desc">
+          Виробник та постачальник гофротари в Україні. Картонні коробки, гофрокартон та пакувальні матеріали від виробника.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+          <a href="#" aria-label="Viber"><i class="bi bi-phone-vibrate"></i></a>
+        </div>
+      </div>
+
+      <!-- Catalog links -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h4 class="footer-heading">Каталог</h4>
+        <ul class="footer-links">
+          <li><a href="#catalog">Картонні коробки</a></li>
+          <li><a href="#catalog">Самозбірні коробки</a></li>
+          <li><a href="#catalog">Гофролотки</a></li>
+          <li><a href="#catalog">Пакувальний папір</a></li>
+          <li><a href="#catalog">Гофрокартон</a></li>
+          <li><a href="#catalog">Листовий картон</a></li>
+        </ul>
+      </div>
+
+      <!-- Company links -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h4 class="footer-heading">Компанія</h4>
+        <ul class="footer-links">
+          <li><a href="#benefits">Переваги</a></li>
+          <li><a href="#how-it-works">Схема роботи</a></li>
+          <li><a href="#how-it-works">Оплата і доставка</a></li>
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Вакансії</a></li>
+          <li><a href="#">Блог</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal links -->
+      <div class="col-lg-2 col-md-6 col-6">
+        <h4 class="footer-heading">Інформація</h4>
+        <ul class="footer-links">
+          <li><a href="#">Політика конфіденційності</a></li>
+          <li><a href="#">Умови використання</a></li>
+          <li><a href="#">Повернення товару</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacts -->
+      <div class="col-lg-2 col-md-6 col-6">
+        <h4 class="footer-heading">Контакти</h4>
+        <div class="footer-contact-item">
+          <i class="bi bi-telephone-fill"></i>
+          <a href="tel:+380991234567">+38 (099) 123-45-67</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="bi bi-envelope-fill"></i>
+          <a href="mailto:info@gofromarket.ua">info@gofromarket.ua</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span>вул. Полігова, 13, Харків</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="bi bi-clock-fill"></i>
+          <span>Пн–Сб: 09:00–19:00</span>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider" />
+
+    <div class="footer-bottom">
+      <span>&copy; 2024 Gofrotara Market. Всі права захищені.</span>
+      <span>ФОП Іваненко І.І., ЄДРПОУ 12345678</span>
+    </div>
+
+  </div>
+</footer>
+<!-- /BLOCK: FOOTER -->
+
+
+<!-- Main JS (Vite entry point) -->
+<script type="module" src="/src/js/main.js"></script>
+
+</body>
+</html>

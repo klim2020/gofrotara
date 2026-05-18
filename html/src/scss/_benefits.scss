@@ -1,0 +1,119 @@
+// ============================================================
+// BLOCK: BENEFITS (ПЕРЕВАГИ РОБОТИ)
+// ============================================================
+
+.benefits-section {
+  padding: 5rem 0;
+  background: $graphite-100;
+  overflow: hidden;
+
+  @include media-breakpoint-down(md) {
+    padding: 3rem 0;
+  }
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @include media-breakpoint-up(sm) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  // Last odd item: center it when alone on a row in 2-col layout
+  @include media-breakpoint-between(sm, md) {
+    .benefit-card:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+      max-width: 50%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.benefit-card {
+  background: $white;
+  border-radius: $border-radius-lg;
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  border: 1px solid $border-color-base;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+
+  // Horizontal layout on mobile: icon left, text right
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    padding: 1rem 1.25rem;
+  }
+
+  &:hover {
+    border-color: $primary-border;
+    box-shadow: $box-shadow;
+    transform: translateY(-4px);
+
+    .benefit-icon-wrap {
+      background: $primary;
+      border-color: $primary;
+
+      i {
+        color: $white;
+      }
+    }
+  }
+}
+
+.benefit-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: $primary-subtle;
+  border: 2px solid $primary-border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  transition: background 0.25s, border-color 0.25s;
+
+  @include media-breakpoint-down(sm) {
+    width: 52px;
+    height: 52px;
+    margin: 0;
+    flex-shrink: 0;
+
+    i { font-size: 1.3rem; }
+  }
+
+  i {
+    font-size: 1.6rem;
+    color: $primary;
+    transition: color 0.25s;
+  }
+}
+
+.benefit-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: $graphite-900;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.benefit-desc {
+  font-size: 0.8rem;
+  color: $graphite-500;
+  line-height: 1.5;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
